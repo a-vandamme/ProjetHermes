@@ -1,0 +1,159 @@
+img {
+	max-width:100%;
+}
+@media screen and (min-width:768px) and (max-width: 1024px){
+/* ----------------------------------------------------------------------------------- */
+/*  TABLETTE > Composants générale*/
+/* ----------------------------------------------------------------------------------- */
+	h1{
+	font-size:20rem;
+	}
+	h2{
+		margin:auto;
+	}
+/* ----------------------------------------------------------------------------------- */
+/* TABLETTE > Header*/
+/* ----------------------------------------------------------------------------------- */
+.header{
+	padding:100rem 0rem 100rem 0rem;
+}
+.image-header1{
+	position: absolute;
+	top:70rem;
+	left:50rem;
+	z-index:1;
+	width:25%;
+}
+.image-header2{
+	position: absolute;
+	top:70rem;
+	right:50rem;
+	z-index:1;
+	width:25%;
+}
+.intro-header{
+	text-align: center;
+	width:40%;
+	background-color: #f5f5f5;
+	margin: auto;
+	padding-top: 100rem;
+}
+/* ----------------------------------------------------------------------------------- */
+/* TABLETTE > Body 1ere partie présentation générale*/
+/* ----------------------------------------------------------------------------------- */
+.image-ma{
+	width:100%;
+	background-color: #f5f5f5;
+}
+.texte-ma{
+	text-align: center;
+	width:100%;
+	padding:0rem 5rem 0rem 5rem;
+}
+}
+@media screen and (max-width:767px){
+/* ----------------------------------------------------------------------------------- */
+/* MOBILE > Composants générale*/
+/* ----------------------------------------------------------------------------------- */	
+h1{
+	font-size:20rem;
+}
+h2{
+	text-align: center;
+}
+.button-nav{
+	display: none;
+}
+.logo-hermes{
+	display: none;	
+}
+.site-header {
+    padding: 0 10%;
+    height: 60rem;
+}
+/* ----------------------------------------------------------------------------------- */
+/* MOBILE > Header*/
+/* ----------------------------------------------------------------------------------- */	
+.header {
+	padding: 0 0 45rem 0;
+}
+.image-header1 {
+    top: 25rem;
+    left: 20rem;
+    width: 40%;
+}
+.image-header2{
+	top:25rem;
+	right: 20rem;
+    width: 40%;
+}
+.intro-header{
+	width: 100%;
+	padding:250rem 20rem 0rem 20rem;
+}
+span.categorie {
+    margin: -5px 0 40rem 0;
+	display: block;
+}
+/* ----------------------------------------------------------------------------------- */
+/* MOBILE > Body 1ere partie présentation générale*/
+/* ----------------------------------------------------------------------------------- */
+	.image-ma{
+	width:100%;
+	background-color: #f5f5f5;
+}
+	.texte-ma{
+	text-align: center;
+	width:100%;
+	padding:100rem 20rem 100rem 20rem;
+}
+	.presentation-ma{
+	flex-direction: column;
+}
+	.presentation-ma:nth-child(even){
+	flex-direction: column;
+}
+.image-ma{
+	flex-basis:100%;
+}
+.texte-interchangeable{
+	width:100%;
+	padding:0px 20px 0px 20px;
+}
+/* ----------------------------------------------------------------------------------- */
+/* MOBILE > Body 2ème partie présentation des produits*/
+/* ----------------------------------------------------------------------------------- */
+.partie{
+	text-align: center;
+	margin:50rem 0rem 50rem 0rem;
+}
+
+article{
+	flex-direction: column;
+	flex-basis: 100%;
+	margin: auto;
+}
+article:nth-child(odd){
+	flex-direction: column;
+	flex-basis: 100%
+}
+.slide-produit {
+	padding: 50rem 0rem 50rem 0rem;
+}
+.description-produit-bracelet-simple,.description-produit-bracelet-simple-rallye,.description-produit-bracelet-double-tour,.description-produit-bracelet-simple-boucle-deployante{
+	padding:80rem 20rem 40rem 20rem;
+	position: relative;
+}
+.multi-coloris{
+	position:absolute;
+	top:20rem;
+	left: 0;
+	right: 0;
+}
+/* ----------------------------------------------------------------------------------- */
+/* MOBILE > Body 3ème partie présentation du formulaire*/
+/* ----------------------------------------------------------------------------------- */
+.formulaire input {
+    width: 80%;
+}
+}
