@@ -21,14 +21,12 @@ img {
 	position: absolute;
 	top:70rem;
 	left:50rem;
-	z-index:1;
 	width:25%;
 }
 .image-header2{
 	position: absolute;
 	top:70rem;
-	right:50rem;
-	z-index:1;
+	right:50rem;	
 	width:25%;
 }
 .intro-header{
@@ -153,7 +151,26 @@ article:nth-child(odd){
 /* ----------------------------------------------------------------------------------- */
 /* MOBILE > Body 3ème partie présentation du formulaire*/
 /* ----------------------------------------------------------------------------------- */
+.formulaire{
+	margin-bottom: 100rem;
+}
 .formulaire input {
     width: 80%;
 }
+.footer-copyright-media-sociaux{
+	flex-direction: column;
+	flex-basis: 100%;
+}
+.social{
+	margin: 20rem 0rem;
+}
+.footer-rights p{
+	text-align: center;
+}
+.geolocalisation{
+font-size: 12rem;
+}
+.footer-logo{
+	margin: 20rem 0rem 50rem 0rem;
+	}
 }

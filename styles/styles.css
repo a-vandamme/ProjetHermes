@@ -403,13 +403,118 @@ article:nth-child(odd){
 }
 
 /* new style */
-#galerie_mini_orange,#galerie_mini_rose,#galerie_mini_maron,#galerie_mini_bleu {
+.galerie_mini{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin:5% auto 0% auto;
 	padding: 0% 10% 0% 10%;
 }
+/* essai galerie mini éléments graphique pour visualiser où sommes nous */
+.btn {
+	border: none;
+	outline: none;
+	padding: 10px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	font-size: 18px;
+  }
+
+button.bouton_orange{
+	background-image: url("../images/assets/coloris_orange.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	border: none;
+	border-radius:50px;
+	text-decoration : none;
+	padding: 15rem 15rem;
+}
+button.bouton-multi-coloris{
+	background-position: center;
+	background-color: white;
+	border: none;
+	border-radius:50px;
+	text-decoration : none;
+	padding: 15rem 15rem;
+}
+.active{
+	border:1px solid #969696;
+	border-radius:50px;
+	text-decoration : none;
+	padding: 18rem 18rem;
+}
+button.bouton_rose{
+	background-image: url("../images/assets/coloris_rose.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	border: none;
+	border-radius:50px;
+	text-decoration : none;
+	padding: 15rem 15rem;
+}
+button.bouton_rose_active{
+	background-image: url("../images/assets/coloris_rose.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	text-align: center;
+	border:1px solid #969696;
+	border-radius:50px;
+	text-decoration : none;
+	padding: 18rem 18rem;
+}
+button.bouton_maron{
+	background-image: url("../images/assets/coloris_maron.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	border: none;
+	border-radius:50px;
+	text-decoration : none;
+	padding: 15rem 15rem;
+}
+button.bouton_maron_active{
+	background-image: url("../images/assets/coloris_maron.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	text-align: center;
+	border:1px solid #969696;
+	border-radius:50px;
+	text-decoration : none;
+	padding: 18rem 18rem;
+}
+button.bouton_bleu{
+	background-image: url("../images/assets/coloris_bleu.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	border: none;
+	border-radius:50px;
+	text-decoration : none;
+	padding: 15rem 15rem;
+}
+button.bouton_bleu_active{
+	background-image: url("../images/assets/coloris_bleu.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	text-align: center;
+	border:1px solid #969696;
+	border-radius:50px;
+	text-decoration : none;
+	padding: 18rem 18rem;
+}
+/* fin d'essai galerie mini éléments graphique pour visualiser où sommes nous */
+/* #galerie_simple_mini_orange,#galerie_simple_mini_rose,#galerie_simple_mini_maron,#galerie_simple_mini_bleu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin:5% auto 0% auto;
+	padding: 0% 10% 0% 10%;
+} */
 .description-produit-bracelet-simple,.description-produit-bracelet-simple-rallye{
 	text-align: center;
 	flex-basis: 50%;
@@ -480,4 +585,8 @@ footer{
 	height:400rem;
 	background-color: #ffffff;
 
+}
+#facebook,#instagram,#twitter,#youtube{
+	width: 50rem;
+    height: 50rem;
 }
