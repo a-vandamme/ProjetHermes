@@ -1,10 +1,3 @@
-// alert('projet web ~maquette + intégration~ by arnaud Vandamme')
-alert( 'Hello, world!' );
-function myFunction() {
-  var x = document.getElementsByClassName("active-pastille");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
 
     /*---------------------------------- CODE JAVASCRIPT SLIDE QUI FONCTIONNE ---------------------------------- */
     //BRACELET SIMPLE TOUR --------------------------------------------------------------------------------------
@@ -189,4 +182,3 @@ function myFunction() {
     }
 
     window.onload = displayPics;
-}

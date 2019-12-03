@@ -287,6 +287,9 @@ button{
 	margin: auto;
 	padding: 15% 0% 20% 0%;
 }
+.ancre-presentation-produit{
+	height: 75rem;
+}
 /* ----------------------------------------------------------------------------------- */
 /* body 1ere partie présentation générale*/
 /* ----------------------------------------------------------------------------------- */
@@ -373,16 +376,33 @@ article:nth-child(odd){
 	flex-basis:50%;
 	padding: 145rem 0rem 145rem 0rem;
 }
-/* new style */
+/* Changement de bracelet couleur avec javascript*/
+.bracelet {
+	display: flex;
+  }
+  .bracelet-simple{
+	  visibility: hidden;
+  }
+  .active{
+	  visibility: visible;
+  }
+  .active-pastille{
+	  border:1rem solid #969696;
+	  border-radius:50px;
+	  text-decoration : none;
+	  padding: 2rem 2rem;
+  }
+/* fin Changement de bracelet couleur avec javascript*/
+
+/* Changement de bracelet couleur avec :target*/
 .bracelet_simple {
 	border: 0;
 	height: 1px;
 	padding: 0;
 	overflow: hidden;
-	clip: rect(1px 1px 1px 1px); IE6 & IE7 */
+	clip: rect(1px 1px 1px 1px);
 	clip: rect(1px, 1px, 1px, 1px);
 }
-/* new style */
 .bracelet_simple:target{
 	position: relative;
 	height: auto;
@@ -390,19 +410,36 @@ article:nth-child(odd){
 	clip: initial;
 	
 }
-/* img.produit{
-	width:40%;
-} */
-
-.tab-content>.tab-pane {
-	display: none
+.bracelet_double {
+	border: 0;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /*IE6 & IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
 }
-
-.tab-content>.active {
-	display: block
+.bracelet_double:target{
+	position: relative;
+	height: auto;
+	padding: initial;
+	clip: initial;
+	
 }
-
-/* new style */
+.bracelet_boucle {
+	border: 0;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); IE6 & IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+.bracelet_boucle:target{
+	position: relative;
+	height: auto;
+	padding: initial;
+	clip: initial;
+	
+}
 .galerie_mini{
 	display: flex;
 	flex-direction: row;
@@ -410,111 +447,7 @@ article:nth-child(odd){
 	margin:5% auto 0% auto;
 	padding: 0% 10% 0% 10%;
 }
-/* essai galerie mini éléments graphique pour visualiser où sommes nous */
-.btn {
-	border: none;
-	outline: none;
-	padding: 10px 16px;
-	background-color: #f1f1f1;
-	cursor: pointer;
-	font-size: 18px;
-  }
 
-button.bouton_orange{
-	background-image: url("../images/assets/coloris_orange.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: white;
-	border: none;
-	border-radius:50px;
-	text-decoration : none;
-	padding: 15rem 15rem;
-}
-button.bouton-multi-coloris{
-	background-position: center;
-	background-color: white;
-	border: none;
-	border-radius:50px;
-	text-decoration : none;
-	padding: 15rem 15rem;
-}
-.active{
-	border:1px solid #969696;
-	border-radius:50px;
-	text-decoration : none;
-	padding: 18rem 18rem;
-}
-button.bouton_rose{
-	background-image: url("../images/assets/coloris_rose.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: white;
-	border: none;
-	border-radius:50px;
-	text-decoration : none;
-	padding: 15rem 15rem;
-}
-button.bouton_rose_active{
-	background-image: url("../images/assets/coloris_rose.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: white;
-	text-align: center;
-	border:1px solid #969696;
-	border-radius:50px;
-	text-decoration : none;
-	padding: 18rem 18rem;
-}
-button.bouton_maron{
-	background-image: url("../images/assets/coloris_maron.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: white;
-	border: none;
-	border-radius:50px;
-	text-decoration : none;
-	padding: 15rem 15rem;
-}
-button.bouton_maron_active{
-	background-image: url("../images/assets/coloris_maron.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: white;
-	text-align: center;
-	border:1px solid #969696;
-	border-radius:50px;
-	text-decoration : none;
-	padding: 18rem 18rem;
-}
-button.bouton_bleu{
-	background-image: url("../images/assets/coloris_bleu.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: white;
-	border: none;
-	border-radius:50px;
-	text-decoration : none;
-	padding: 15rem 15rem;
-}
-button.bouton_bleu_active{
-	background-image: url("../images/assets/coloris_bleu.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: white;
-	text-align: center;
-	border:1px solid #969696;
-	border-radius:50px;
-	text-decoration : none;
-	padding: 18rem 18rem;
-}
-/* fin d'essai galerie mini éléments graphique pour visualiser où sommes nous */
-/* #galerie_simple_mini_orange,#galerie_simple_mini_rose,#galerie_simple_mini_maron,#galerie_simple_mini_bleu {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin:5% auto 0% auto;
-	padding: 0% 10% 0% 10%;
-} */
 .description-produit-bracelet-simple,.description-produit-bracelet-simple-rallye{
 	text-align: center;
 	flex-basis: 50%;
@@ -525,36 +458,42 @@ button.bouton_bleu_active{
 	flex-basis: 50%;
 	padding:0% 10% 0% 1%;
 }
-/* new style */
+
 ul, li {
 	display: inline-block;
 }
-.multi-coloris li:active{
-		border:1px solid #969696;
-		padding:3px;
-		border-radius: 20px;
+/* essai pastille */
+
+.multi-coloris {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: auto;
+/* padding: 0% 30% 0% 30%; */
+
+}
+.description-produit-bracelet-simple-boucle-deployante .multi-coloris{
+    padding: 0% 30% 0% 30%;
+}
+.multi-coloris li{
+    display: inherit;
 }
 .multi-coloris a{
-		font-size:0px;
+    font-size:0px;
 }
-.galerie_mini li:active{
-	border:1px solid #969696;
-	padding:3px;
-	border-radius: 30px;
+.multi-coloris:focus{
+    border:1px solid #969696;
+    padding:2rem 2rem;
+    border-radius: 35px;
+    font-size:0px;
 }
-.galerie_mini a{
-	font-size:0px;
-} 
+.multi-coloris a:hover:not(.active){
+    border:1px solid #969696;
+    padding:2rem 2rem;
+    border-radius: 35px;
+    font-size:0px;
+}  
 
-.multi-coloris 
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: auto;
-	padding: 0% 30% 0% 30%;
-	
-}
 /* ----------------------------------------------------------------------------------- */
 /* Body 3eme partie Formulaire prise de rendez-vous*/
 /* ----------------------------------------------------------------------------------- */
@@ -566,6 +505,7 @@ height:75rem;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	margin-bottom: 200rem;
 }
 .formulaire form{
 	display: flex;
@@ -582,11 +522,38 @@ input{
 	padding:1%;
 }
 footer{
-	height:400rem;
 	background-color: #ffffff;
-
+	margin: 0 8% 0 8%;
+}
+.geolocalisation{
+	background: transparent;
+	border: none;
+	color: black;
+	padding: 0rem;
+	text-align: center;
+	text-decoration: underline;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-size: 14rem;
+}
+.footer-copyright-media-sociaux{
+	display: flex;
+	flex-direction: row-reverse;
+    align-items: center;
+	justify-content: space-between;	
+	width: 100%;
+	border-top: 1px solid #e5e5e5;
 }
 #facebook,#instagram,#twitter,#youtube{
-	width: 50rem;
-    height: 50rem;
+	width: 24rem;
+	height: 24rem;
+	fill:#696969;
+	margin-left: 15rem;
+}
+.footer-logo{
+display: flex;
+flex-direction: column;
+margin: 50rem 0rem;
 }
