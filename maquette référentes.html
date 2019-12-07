@@ -11,9 +11,9 @@
 </head>
 <body>
 	<div class="site-header">
-		<div class="navigation">
+		<div onclick="OpenNav()" class="navigation">
 			<div class="burger-nav">
-				<div id="burger-nav">
+				<div  id="burger-nav">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -28,18 +28,14 @@
 			<button class="button-nav" type="button" ><a class="bouton-nav" href="#formulaire">Adoptez-le !</a></button>
 		</div>
 	<header>
-		 <div class="navigation">
-					
-		<input class="burger-check" id="burger-check" type="checkbox"/>
-		
-		<label class="burger" for="burger-check"></label>
-
-		<ul class="main-nav" id="affiche-main-nav">
-			<li><a href="">Bracelet double tour</a></li>
-			<li><a href="">Bracelet simple tour</a></li>
-			<li><a href="">Bracelet rallye simple tour</a></li>
-			<li><a href="">Prendre rendez vous</a></li>
-		</ul>
+		<div class="navigation">    
+		    <ul class="main-nav" id="mySidenav">
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;Menu</a></li>
+			    <li><a href="">Bracelet double tour</a></li>
+			    <li><a href="">Bracelet simple tour</a></li>
+			    <li><a href="">Bracelet rallye simple tour</a></li>
+			    <li><a href="">Prendre rendez vous</a></li>
+		    </ul>
 		</div> 
 			<div class="header">
 				<div class="image-header1">

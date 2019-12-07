@@ -66,8 +66,6 @@ button{
 	cursor: pointer;
 	/* margin: 0rem 0rem 20rem 0rem; */
 }
-
-
 /* ----------------------------------------------------------------------------------- */
 /* navigation header*/
 /* ----------------------------------------------------------------------------------- */
@@ -81,7 +79,7 @@ button{
 	justify-content: space-between;
 	align-items: center;
 	margin:auto;
-	height: 75rem
+	height: 75rem;
 	}
 .navigation{
 	display:flex;
@@ -91,6 +89,31 @@ button{
 	z-index:  2;
 	align-items: center;
 	background-color: white;
+}
+.navigation-open{
+	position: sticky;
+	z-index:  2;
+}
+.main-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 510rem;
+	height: 100%;
+	padding: 50rem 100rem;
+	background-color:#fff;
+}
+
+
+.main-nav li {
+	display: block;
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.main-nav li a {
+	color: grey; /*pas la bonne couleur*/
+	text-decoration: none;
 }
 .burger-nav{
 	display: flex;
@@ -108,15 +131,6 @@ button{
 #burger-nav{
 	width:18px;
 	height:18px;
-	position: relative;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
 	cursor: pointer;
   }
 
@@ -129,14 +143,6 @@ button{
 	background: grey;
 	opacity: 1;
 	left: 0;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-	-webkit-transition: .25s ease-in-out;
-	-moz-transition: .25s ease-in-out;
-	-o-transition: .25s ease-in-out;
-	transition: .25s ease-in-out;
   }
   #burger-nav span:nth-child(1) {
 	top: 0px;
@@ -149,77 +155,6 @@ button{
   #burger-nav span:nth-child(4) {
 	top: 16px;
   }
-
-  #burger-nav.open span:nth-child(1) {
-	top: 18px;
-	width: 0%;
-	left: 50%;
-  }
-  
-  #burger-nav.open span:nth-child(2) {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-  }
-  
-  #burger-nav.open span:nth-child(3) {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-  }
-  
-  #burger-nav.open span:nth-child(4) {
-	top: 18px;
-	width: 0%;
-	left: 50%;
-  }	
-/* fin burger visuel */
-/* .burger {
-	
-	width: 50px;
-	height: 50px;
-	background-color: grey;
-}
-
-.burger-check {
-	position: absolute;
-	left: -9999px; 
-	top: 0;
-	visibility: hidden; 
-}
-.burger {
-		display: block;
-	}
-
-	.burger-check:checked ~ .main-nav {
-		display: block;
-	}
-
-	.burger-check:checked ~ .burger {
-		background-color: black;
-	} */
-	.main-nav {
-		/* display: none; pour activer le open close */
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 510rem;
-		background-color:#fff;
-	}
-
-
-	.main-nav li {
-		display: block;
-		font-size: 20px;
-		margin: 10px 0;
-	}
-
-	.main-nav li a {
-		color: grey; /*pas la bonne couleur*/
-		text-decoration: none;
-	}
 
 	button {
   		border: none;
