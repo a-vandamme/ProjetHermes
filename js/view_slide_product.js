@@ -179,13 +179,318 @@
             return false;
         };
     }
+// ---------------------------------  menu coloris qui fonctionne ------------------------------
+
+    //menu coloris bracelet simple --------------------------------------------------------------------------------------
+    var orange = document.getElementById('bouton_galerie_bracelet_simple_orange');
+    var rose = document.getElementById('bouton_galerie_bracelet_simple_rose');
+    var maron = document.getElementById('bouton_galerie_bracelet_simple_maron');
+    var bleu = document.getElementById('bouton_galerie_bracelet_simple_bleu');
+    
+    //menu coloris bracelet simple orange --------------------------------------------------------------------------------------
+    orange.onclick = function () {
+
+        var braceletOrange = document.getElementById('galerie_bracelet_simple_orange');
+        var braceletRoseOrange = document.getElementById('galerie_bracelet_simple_rose');
+        var braceletMaronOrange = document.getElementById('galerie_bracelet_simple_maron');
+        var braceletBleuOrange = document.getElementById('galerie_bracelet_simple_bleu');
+
+        if (braceletOrange.style.display == 'block') {
+            braceletOrange.style.display = 'none';
+        }
+        else {
+        braceletOrange.style.display = 'block';
+        
+        braceletRoseOrange.style.display = 'none';
+        braceletMaronOrange.style.display = 'none';
+        braceletBleuOrange.style.display = 'none';
+        }
+    }
+    //menu coloris bracelet simple rose --------------------------------------------------------------------------------------
+    rose.onclick = function () {
+        var braceletOrangeRose = document.getElementById('galerie_bracelet_simple_orange');
+        var braceletRose = document.getElementById('galerie_bracelet_simple_rose');
+        var braceletMaronRose = document.getElementById('galerie_bracelet_simple_maron');
+        var braceletBleuRose = document.getElementById('galerie_bracelet_simple_bleu');
+
+        if (braceletRose.style.display == 'block') {
+            braceletRose.style.display = 'none';
+        }
+        else {
+            braceletRose.style.display = 'block';
+            
+            braceletOrangeRose.style.display = 'none';
+            braceletMaronRose.style.display = 'none';
+            braceletBleuRose.style.display = 'none';
+        }
+    }
+    //menu coloris bracelet simple maron --------------------------------------------------------------------------------------
+    maron.onclick = function () {
+
+        var braceletOrangeMaron = document.getElementById('galerie_bracelet_simple_orange');
+        var braceletRoseMaron = document.getElementById('galerie_bracelet_simple_rose');
+        var braceletMaron = document.getElementById('galerie_bracelet_simple_maron');
+        var braceletBleuMaron = document.getElementById('galerie_bracelet_simple_bleu');
+
+        if (braceletMaron.style.display == 'block') {
+            braceletMaron.style.display = 'none';
+        }
+        else {
+            braceletMaron.style.display = 'block';
+            
+            braceletRoseMaron.style.display = 'none';
+            braceletOrangeMaron.style.display = 'none';
+            braceletBleuMaron.style.display = 'none';
+        }
+    }
+    //menu coloris bracelet simple bleu --------------------------------------------------------------------------------------
+    bleu.onclick = function () {
+
+        var braceletOrangeBleu = document.getElementById('galerie_bracelet_simple_orange');
+        var braceletRoseBleu = document.getElementById('galerie_bracelet_simple_rose');
+        var braceletMaronBleu = document.getElementById('galerie_bracelet_simple_maron');
+        var braceletBleu = document.getElementById('galerie_bracelet_simple_bleu');
+
+        if (braceletBleu.style.display == 'block') {
+            braceletBleu.style.display = 'none';
+        }
+        else {
+            braceletBleu.style.display = 'block';
+            
+            braceletRoseBleu.style.display = 'none';
+            braceletOrangeBleu.style.display = 'none';
+            braceletMaronBleu.style.display = 'none';
+        }
+    }
+
+
+
+        //menu coloris bracelet double --------------------------------------------------------------------------------------
+        var colorisDoubleOrange = document.getElementById('bouton_galerie_bracelet_double_orange');
+        var colorisDoubleRose = document.getElementById('bouton_galerie_bracelet_double_rose');
+        var colorisDoubleMaron = document.getElementById('bouton_galerie_bracelet_double_maron');
+        var colorisDoubleBleu = document.getElementById('bouton_galerie_bracelet_double_bleu');
+        
+        //menu coloris bracelet double orange --------------------------------------------------------------------------------------
+        colorisDoubleOrange.onclick = function () {
+    
+            var colorisDoubleBraceletOrange = document.getElementById('galerie_bracelet_double_orange');
+            var colorisDoubleBraceletRoseOrange = document.getElementById('galerie_bracelet_double_rose');
+            var colorisDoubleBraceletMaronOrange = document.getElementById('galerie_bracelet_double_maron');
+            var ColorisBraceletDoubleBleuOrange = document.getElementById('galerie_bracelet_double_bleu');
+    
+            if (colorisDoubleBraceletOrange.style.display == 'block') {
+                colorisDoubleBraceletOrange.style.display = 'none';
+            }
+            else {
+                colorisDoubleBraceletOrange.style.display = 'block';
+            
+            colorisDoubleBraceletRoseOrange.style.display = 'none';
+            colorisDoubleBraceletMaronOrange.style.display = 'none';
+            ColorisBraceletDoubleBleuOrange.style.display = 'none';
+            }
+        }
+        //menu coloris bracelet double rose --------------------------------------------------------------------------------------
+        colorisDoubleRose.onclick = function () {
+            var colorisDoubleBraceletOrangeRose = document.getElementById('galerie_bracelet_double_orange');
+            var colorisDoubleBraceletRose = document.getElementById('galerie_bracelet_double_rose');
+            var colorisDoubleBraceletMaronRose = document.getElementById('galerie_bracelet_double_maron');
+            var colorisDoubleBraceletBleuRose = document.getElementById('galerie_bracelet_double_bleu');
+    
+            if (colorisDoubleBraceletRose.style.display == 'block') {
+                colorisDoubleBraceletRose.style.display = 'none';
+            }
+            else {
+                colorisDoubleBraceletRose.style.display = 'block';
+                
+                colorisDoubleBraceletOrangeRose.style.display = 'none';
+                colorisDoubleBraceletMaronRose.style.display = 'none';
+                colorisDoubleBraceletBleuRose.style.display = 'none';
+            }
+        }
+        //menu coloris bracelet double maron --------------------------------------------------------------------------------------
+        colorisDoubleMaron.onclick = function () {
+    
+            var colorisDoubleBraceletOrangeMaron = document.getElementById('galerie_bracelet_double_orange');
+            var colorisDoubleBraceletRoseMaron = document.getElementById('galerie_bracelet_double_rose');
+            var colorisDoubleBraceletMaron = document.getElementById('galerie_bracelet_double_maron');
+            var colorisDoubleBraceletBleuMaron = document.getElementById('galerie_bracelet_double_bleu');
+    
+            if (colorisDoubleBraceletMaron.style.display == 'block') {
+                colorisDoubleBraceletMaron.style.display = 'none';
+            }
+            else {
+                colorisDoubleBraceletMaron.style.display = 'block';
+                
+                colorisDoubleBraceletRoseMaron.style.display = 'none';
+                colorisDoubleBraceletOrangeMaron.style.display = 'none';
+                colorisDoubleBraceletBleuMaron.style.display = 'none';
+            }
+        }
+        //menu coloris bracelet simple bleu --------------------------------------------------------------------------------------
+        colorisDoubleBleu.onclick = function () {
+    
+            var colorisDoubleBraceletOrangeBleu = document.getElementById('galerie_bracelet_double_orange');
+            var colorisDoubleBraceletRoseBleu = document.getElementById('galerie_bracelet_double_rose');
+            var colorisDoubleBraceletMaronBleu = document.getElementById('galerie_bracelet_double_maron');
+            var colorisDoubleBraceletBleu = document.getElementById('galerie_bracelet_double_bleu');
+    
+            if (colorisDoubleBraceletBleu.style.display == 'block') {
+                colorisDoubleBraceletBleu.style.display = 'none';
+            }
+            else {
+                colorisDoubleBraceletBleu.style.display = 'block';
+                
+                colorisDoubleBraceletRoseBleu.style.display = 'none';
+                colorisDoubleBraceletOrangeBleu.style.display = 'none';
+                colorisDoubleBraceletMaronBleu.style.display = 'none';
+            }
+        }
+
+
+
+                //menu coloris bracelet double --------------------------------------------------------------------------------------
+        var colorisDoubleOrange = document.getElementById('bouton_galerie_bracelet_double_orange');
+        var colorisDoubleRose = document.getElementById('bouton_galerie_bracelet_double_rose');
+        var colorisDoubleMaron = document.getElementById('bouton_galerie_bracelet_double_maron');
+        var colorisDoubleBleu = document.getElementById('bouton_galerie_bracelet_double_bleu');
+        
+        //menu coloris bracelet double orange --------------------------------------------------------------------------------------
+        colorisDoubleOrange.onclick = function () {
+    
+            var colorisDoubleBraceletOrange = document.getElementById('galerie_bracelet_double_orange');
+            var colorisDoubleBraceletRoseOrange = document.getElementById('galerie_bracelet_double_rose');
+            var colorisDoubleBraceletMaronOrange = document.getElementById('galerie_bracelet_double_maron');
+            var ColorisBraceletDoubleBleuOrange = document.getElementById('galerie_bracelet_double_bleu');
+    
+            if (colorisDoubleBraceletOrange.style.display == 'block') {
+                colorisDoubleBraceletOrange.style.display = 'none';
+            }
+            else {
+                colorisDoubleBraceletOrange.style.display = 'block';
+            
+            colorisDoubleBraceletRoseOrange.style.display = 'none';
+            colorisDoubleBraceletMaronOrange.style.display = 'none';
+            ColorisBraceletDoubleBleuOrange.style.display = 'none';
+            }
+        }
+        //menu coloris bracelet double rose --------------------------------------------------------------------------------------
+        colorisDoubleRose.onclick = function () {
+            var colorisDoubleBraceletOrangeRose = document.getElementById('galerie_bracelet_double_orange');
+            var colorisDoubleBraceletRose = document.getElementById('galerie_bracelet_double_rose');
+            var colorisDoubleBraceletMaronRose = document.getElementById('galerie_bracelet_double_maron');
+            var colorisDoubleBraceletBleuRose = document.getElementById('galerie_bracelet_double_bleu');
+    
+            if (colorisDoubleBraceletRose.style.display == 'block') {
+                colorisDoubleBraceletRose.style.display = 'none';
+            }
+            else {
+                colorisDoubleBraceletRose.style.display = 'block';
+                
+                colorisDoubleBraceletOrangeRose.style.display = 'none';
+                colorisDoubleBraceletMaronRose.style.display = 'none';
+                colorisDoubleBraceletBleuRose.style.display = 'none';
+            }
+        }
+        //menu coloris bracelet double maron --------------------------------------------------------------------------------------
+        colorisDoubleMaron.onclick = function () {
+    
+            var colorisDoubleBraceletOrangeMaron = document.getElementById('galerie_bracelet_double_orange');
+            var colorisDoubleBraceletRoseMaron = document.getElementById('galerie_bracelet_double_rose');
+            var colorisDoubleBraceletMaron = document.getElementById('galerie_bracelet_double_maron');
+            var colorisDoubleBraceletBleuMaron = document.getElementById('galerie_bracelet_double_bleu');
+    
+            if (colorisDoubleBraceletMaron.style.display == 'block') {
+                colorisDoubleBraceletMaron.style.display = 'none';
+            }
+            else {
+                colorisDoubleBraceletMaron.style.display = 'block';
+                
+                colorisDoubleBraceletRoseMaron.style.display = 'none';
+                colorisDoubleBraceletOrangeMaron.style.display = 'none';
+                colorisDoubleBraceletBleuMaron.style.display = 'none';
+            }
+        }
+        //menu coloris bracelet double bleu --------------------------------------------------------------------------------------
+        colorisDoubleBleu.onclick = function () {
+    
+            var colorisDoubleBraceletOrangeBleu = document.getElementById('galerie_bracelet_double_orange');
+            var colorisDoubleBraceletRoseBleu = document.getElementById('galerie_bracelet_double_rose');
+            var colorisDoubleBraceletMaronBleu = document.getElementById('galerie_bracelet_double_maron');
+            var colorisDoubleBraceletBleu = document.getElementById('galerie_bracelet_double_bleu');
+    
+            if (colorisDoubleBraceletBleu.style.display == 'block') {
+                colorisDoubleBraceletBleu.style.display = 'none';
+            }
+            else {
+                colorisDoubleBraceletBleu.style.display = 'block';
+                
+                colorisDoubleBraceletRoseBleu.style.display = 'none';
+                colorisDoubleBraceletOrangeBleu.style.display = 'none';
+                colorisDoubleBraceletMaronBleu.style.display = 'none';
+            }
+        }
+
+
+
+
+        //menu coloris bracelet boucle --------------------------------------------------------------------------------------
+
+        var colorisBoucleMaron = document.getElementById('bouton_galerie_bracelet_boucle_maron');
+        var colorisBoucleNoir = document.getElementById('bouton_galerie_bracelet_boucle_noir');
+        
+
+        //menu coloris bracelet boucle maron --------------------------------------------------------------------------------------
+        colorisBoucleMaron.onclick = function () {
+    
+            var colorisBoucleBraceletMaron = document.getElementById('galerie_bracelet_boucle_maron');
+            var colorisBoucleBraceletNoirMaron = document.getElementById('galerie_bracelet_boucle_noir');
+    
+            if (colorisBoucleBraceletMaron.style.display == 'block') {
+                colorisBoucleBraceletMaron.style.display = 'none';
+            }
+            else {
+                colorisBoucleBraceletMaron.style.display = 'block';
+                
+                colorisBoucleBraceletNoirMaron.style.display = 'none';
+            }
+        }
+        //menu coloris bracelet boucle noir --------------------------------------------------------------------------------------
+        colorisBoucleNoir.onclick = function () {
+    
+            var colorisBoucleBraceletMaronNoir = document.getElementById('galerie_bracelet_boucle_maron');
+            var colorisBoucleBraceletNoir = document.getElementById('galerie_bracelet_boucle_noir');
+    
+            if (colorisBoucleBraceletNoir.style.display == 'block') {
+                colorisBoucleBraceletNoir.style.display = 'none';
+            }
+            else {
+                colorisBoucleBraceletNoir.style.display = 'block';
+                
+                colorisBoucleBraceletMaronNoir.style.display = 'none';
+            }
+        }
+        // essai menu
+        burgerNav.onclick = function () {
+            var burgerNav = document.getElementByClass('navigation');
+    
+            if (document.getElementByClass('navigation').style.display == 'block') {
+                document.getElementByClass('navigation').style.display = "none";
+            }
+            
+        }
     }
 
     window.onload = displayPics;
-    function openNav() {
-        document.getElementById("mySidenav").style.display = "flex";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.display = "none";
-      }
+
+
+
+
+    //menu navigation --------------------------------------------------------------------------------------
+    // function openNav() {
+    //     document.getElementById("mySidenav").style.display = "flex";
+    //   } 
+    // function closeNav() {
+    //     document.getElementById("mySidenav").style.display = "none";
+    //   }
+        
