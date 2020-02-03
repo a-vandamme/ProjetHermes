@@ -205,6 +205,7 @@
         braceletMaronOrange.style.display = 'none';
         braceletBleuOrange.style.display = 'none';
         }
+        braceletOrange.style.display = 'block';
     }
     //menu coloris bracelet simple rose --------------------------------------------------------------------------------------
     rose.onclick = function () {
@@ -223,6 +224,7 @@
             braceletMaronRose.style.display = 'none';
             braceletBleuRose.style.display = 'none';
         }
+        braceletRose.style.display = 'block';
     }
     //menu coloris bracelet simple maron --------------------------------------------------------------------------------------
     maron.onclick = function () {
@@ -242,6 +244,7 @@
             braceletOrangeMaron.style.display = 'none';
             braceletBleuMaron.style.display = 'none';
         }
+        braceletMaron.style.display = 'block';
     }
     //menu coloris bracelet simple bleu --------------------------------------------------------------------------------------
     bleu.onclick = function () {
@@ -261,6 +264,7 @@
             braceletOrangeBleu.style.display = 'none';
             braceletMaronBleu.style.display = 'none';
         }
+        braceletBleu.style.display = 'block';
     }
 
 
@@ -285,10 +289,11 @@
             else {
                 colorisDoubleBraceletOrange.style.display = 'block';
             
-            colorisDoubleBraceletRoseOrange.style.display = 'none';
-            colorisDoubleBraceletMaronOrange.style.display = 'none';
-            ColorisBraceletDoubleBleuOrange.style.display = 'none';
+                colorisDoubleBraceletRoseOrange.style.display = 'none';
+                colorisDoubleBraceletMaronOrange.style.display = 'none';
+                ColorisBraceletDoubleBleuOrange.style.display = 'none';
             }
+            colorisDoubleBraceletOrange.style.display = 'block';
         }
         //menu coloris bracelet double rose --------------------------------------------------------------------------------------
         colorisDoubleRose.onclick = function () {
@@ -307,6 +312,7 @@
                 colorisDoubleBraceletMaronRose.style.display = 'none';
                 colorisDoubleBraceletBleuRose.style.display = 'none';
             }
+            colorisDoubleBraceletRose.style.display = 'block';
         }
         //menu coloris bracelet double maron --------------------------------------------------------------------------------------
         colorisDoubleMaron.onclick = function () {
@@ -326,6 +332,7 @@
                 colorisDoubleBraceletOrangeMaron.style.display = 'none';
                 colorisDoubleBraceletBleuMaron.style.display = 'none';
             }
+            colorisDoubleBraceletMaron.style.display = 'block';
         }
         //menu coloris bracelet simple bleu --------------------------------------------------------------------------------------
         colorisDoubleBleu.onclick = function () {
@@ -345,6 +352,7 @@
                 colorisDoubleBraceletOrangeBleu.style.display = 'none';
                 colorisDoubleBraceletMaronBleu.style.display = 'none';
             }
+            colorisDoubleBraceletBleu.style.display = 'block';
         }
 
 
@@ -373,6 +381,7 @@
             colorisDoubleBraceletMaronOrange.style.display = 'none';
             ColorisBraceletDoubleBleuOrange.style.display = 'none';
             }
+            colorisDoubleBraceletOrange.style.display = 'block';
         }
         //menu coloris bracelet double rose --------------------------------------------------------------------------------------
         colorisDoubleRose.onclick = function () {
@@ -391,6 +400,7 @@
                 colorisDoubleBraceletMaronRose.style.display = 'none';
                 colorisDoubleBraceletBleuRose.style.display = 'none';
             }
+            colorisDoubleBraceletRose.style.display = 'block';
         }
         //menu coloris bracelet double maron --------------------------------------------------------------------------------------
         colorisDoubleMaron.onclick = function () {
@@ -410,6 +420,7 @@
                 colorisDoubleBraceletOrangeMaron.style.display = 'none';
                 colorisDoubleBraceletBleuMaron.style.display = 'none';
             }
+            colorisDoubleBraceletMaron.style.display = 'block';
         }
         //menu coloris bracelet double bleu --------------------------------------------------------------------------------------
         colorisDoubleBleu.onclick = function () {
@@ -429,6 +440,7 @@
                 colorisDoubleBraceletOrangeBleu.style.display = 'none';
                 colorisDoubleBraceletMaronBleu.style.display = 'none';
             }
+            colorisDoubleBraceletBleu.style.display = 'block';
         }
 
 
@@ -454,6 +466,7 @@
                 
                 colorisBoucleBraceletNoirMaron.style.display = 'none';
             }
+            colorisBoucleBraceletMaron.style.display = 'block';
         }
         //menu coloris bracelet boucle noir --------------------------------------------------------------------------------------
         colorisBoucleNoir.onclick = function () {
@@ -469,28 +482,37 @@
                 
                 colorisBoucleBraceletMaronNoir.style.display = 'none';
             }
+            colorisBoucleBraceletNoir.style.display = 'block';
         }
-        // essai menu
-        burgerNav.onclick = function () {
-            var burgerNav = document.getElementByClass('navigation');
-    
-            if (document.getElementByClass('navigation').style.display == 'block') {
-                document.getElementByClass('navigation').style.display = "none";
-            }
-            
-        }
-    }
 
-    window.onload = displayPics;
+
+    window.onload = displayPics;}
 
 
 
 
     //menu navigation --------------------------------------------------------------------------------------
-    // function openNav() {
-    //     document.getElementById("mySidenav").style.display = "flex";
-    //   } 
-    // function closeNav() {
-    //     document.getElementById("mySidenav").style.display = "none";
-    //   }
-        
+    (function() {
+
+        var hamburger = {
+            navToggle: document.querySelector('.nav-toggle'),
+            nav: document.querySelector('nav'),
+    
+            doToggle: function(e) {
+                e.preventDefault();
+                this.navToggle.classList.toggle('expanded');
+                this.nav.classList.toggle('expanded');
+            }
+        };
+    
+        hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+    
+    }());
+
+
+
+
+
+
+
+
